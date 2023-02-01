@@ -5,7 +5,7 @@ Author: Maryline Carrier
 Author URI: https://wordpress.org/
 Description: introduction a la creation de workpress theme
 Version: 1.3
-Requires at least: 5.0
+Requires at least: 6.1.1
 Tested up to: 5.4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -18,5 +18,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 
-    background-color: #bbb;
+    background-color: hotpink;
 }

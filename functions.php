@@ -10,5 +10,17 @@ function ajouter_styles()
         filemtime(get_template_directory() . '/style.css') // la version de la dernière feuille de style
     );
 }
-add_action('wp_enqueue_scripts', 'ajouter_styles'); 
+add_action('wp_enqueue_scripts', 'ajouter_styles');
 //add filter retourne une valeur add action comme addeventlistener
+
+/*------------------------------------------- add theme support */
+add_theme_support(
+    'html5',
+    array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption'
+    )
+);

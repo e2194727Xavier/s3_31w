@@ -24,3 +24,6 @@ add_theme_support(
         'caption'
     )
 );
+
+/** add costum logo */
+add_theme_support('custom-logo');

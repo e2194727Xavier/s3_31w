@@ -37,7 +37,7 @@ add_theme_support(
 );
 
 
-/*-------------------------------------------add menu 
+/*------------------------------------------- enregistrement des menus add menu -----------------------
 enregistre les deux classes css pour le menu_entete et menu_footer */
 
 function enregistrement_des_menus()
@@ -48,4 +48,4 @@ function enregistrement_des_menus()
     ));
 }
 
-add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);
+add_action('after_setup_theme', 'enregistrement_des_menus', 0);

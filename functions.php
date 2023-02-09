@@ -25,5 +25,27 @@ add_theme_support(
     )
 );
 
-/** add costum logo */
-add_theme_support('custom-logo');
+/**-------------------------------------------add costum logo */
+add_theme_support('title-tag');
+
+add_theme_support(
+    'custom-logo',
+    array(
+        'height' => 150,
+        'width'  => 150,
+    )
+);
+
+
+/*-------------------------------------------add menu 
+enregistre les deux classes css pour le menu_entete et menu_footer */
+
+function enregistrement_des_menus()
+{
+    register_nav_menus(array(
+        'menu_entete' => 'Menu entête',
+        'menu_footer' => 'Menu pied de page',
+    ));
+}
+
+add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);

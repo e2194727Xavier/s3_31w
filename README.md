@@ -11,9 +11,7 @@
 
 ### lien SiteGround 
 
-aecweb6.sg-host.com
+https://aecweb6.sg-host.com/
 
-### lien GitHub
 
-https://github.com/maryline888/s3_31w/tree/exercice1
 

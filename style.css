@@ -80,27 +80,22 @@ p {
   margin-left: auto;
   padding: 20px;
 }
-
 .menu-entete-container .menu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
   text-transform: uppercase;
 }
-
 .menu-entete-container .menu .menu-item {
   flex: 1 0 50px;
 }
-
 .menu-entete-container .menu .menu-item a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   padding: 3px 5px;
 }
-
 .menu-entete-container .menu .menu-item a:hover {
   color: hotpink;
   text-decoration: underline;

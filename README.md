@@ -9,7 +9,7 @@
     - Créer un minimum de 10 commits 
     - Déployer le site local vers un serveur distant 
 
-### lien SiteGround 
+### Lien SiteGround 
 
 https://aecweb6.sg-host.com/
 

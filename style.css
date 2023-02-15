@@ -14,6 +14,16 @@ Text Domain: 31w-maryline-carrier
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+/****************************** Normalize *********/
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 /****************************** BASE *********/
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
@@ -64,12 +74,34 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/****************************** Normalize *********/
-::before,
-::after {
-  box-sizing: inherit;
+/****************************** COMPOSANT *********/
+.menu-entete-container {
+  background-color: black;
+  margin-left: auto;
+  padding: 20px;
 }
 
-html {
-  box-sizing: border-box;
+.menu-entete-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.menu-entete-container .menu .menu-item {
+  flex: 1 0 50px;
+}
+
+.menu-entete-container .menu .menu-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 3px 5px;
+}
+
+.menu-entete-container .menu .menu-item a:hover {
+  color: hotpink;
+  text-decoration: underline;
 }

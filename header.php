@@ -12,7 +12,7 @@
 <body>
 
     <header>
-
+        <?php the_custom_logo(); ?>
         <?php wp_nav_menu(array(
             'menu' => 'entete',
             'container' => 'nav'

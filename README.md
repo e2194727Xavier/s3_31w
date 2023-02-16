@@ -1,13 +1,17 @@
-# Excercice #1 
+# Excercice #2
 
-## Installation de WordPress et création de thèmes
+## Améliorer la structure générale du thème
 ## Auteur : Maryline Carrier 
 ### Objectifs 
-    - Installer WP 
-    - Créer un thème simple 
-    - Créer une structure Sass
-    - Créer un minimum de 10 commits 
-    - Déployer le site local vers un serveur distant 
+
+- Formater en scss l'affichage de fichier markdown
+- Créer des modèles pour afficher des archives d'article
+- Améliorer de module front-page.php
+- Création de menu
+- Créer un site adaptatif en utilisant l'approche mobile-first
+- Créer un minimum de 10 commits
+- Déployer le site local vers un serveur distant
+
 
 ### Lien SiteGround 
 

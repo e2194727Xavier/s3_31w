@@ -75,10 +75,17 @@ p {
 }
 
 /****************************** COMPOSANT *********/
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-entete-container {
   background-color: black;
   margin-left: auto;
   padding: 20px;
+  flex: 1;
 }
 .menu-entete-container .menu {
   display: flex;

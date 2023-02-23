@@ -20,6 +20,7 @@ get_header();
                     <?= wp_trim_words(get_the_excerpt(), 60) ?>
                     <hr>
                 </article>
+
             <?php endwhile; ?>
         <?php endif; ?>
     </section>

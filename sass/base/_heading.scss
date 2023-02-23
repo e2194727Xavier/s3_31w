@@ -27,11 +27,11 @@ P {
 }
 
 h1 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: sans-serif;
 }
 
 h2 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: sans-serif;
     /* font-family: "Slackey", cursive;
     */
 }
@@ -40,16 +40,20 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
 
+}
+
+main {
+    margin: 20px;
 }

@@ -1,5 +1,5 @@
 .site__entete {
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 
 }
@@ -38,10 +38,17 @@
                 padding: 3px 5px;
             }
 
+
+
             a:hover {
                 color: hotpink;
                 text-decoration: underline;
             }
         }
+    }
+
+    .titre_entete {
+        text-align: center;
+        padding: 10px;
     }
 }

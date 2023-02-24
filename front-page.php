@@ -5,7 +5,7 @@
 
 <main>
     <code>front-page.php</code>
-    <h3>index.php</h3>
+
     <section class="blocflex">
 
         <?php

@@ -3,7 +3,7 @@
 /**
  * template footer.php */ ?>
 
-<footer>
+<footer class="site__footer">
     <h3>pied de page</h3>
 </footer>
 <?php wp_footer(); ?>

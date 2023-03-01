@@ -574,7 +574,7 @@ hr {
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(250, 215, 249);
+  background-color: rgb(246, 226, 245);
 }
 
 .site__main {
@@ -590,7 +590,7 @@ hr {
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: rgb(212, 237, 242);
 }
 
 .site {
@@ -599,4 +599,10 @@ hr {
   grid-template-areas: "header" "aside" "main" "footer";
   row-gap: 50px;
   background-color: rgb(191, 232, 255);
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
 }

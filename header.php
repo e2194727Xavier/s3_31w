@@ -25,3 +25,6 @@
             <h2><?php bloginfo('description'); ?></h2>
         </section>
     </header>
+    <aside class="site__aside">
+        <h3>Menu secondaire</h3>
+    </aside>

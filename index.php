@@ -3,7 +3,7 @@
 /**modele footer.php ?> */ ?>
 <?php get_header(); ?>
 
-<main>
+<main class="site__main">
     <code>index.php</code>
 
     <?php

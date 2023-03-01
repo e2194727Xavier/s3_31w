@@ -35,11 +35,10 @@
     background-color: rgb(191 232 255);
 
     @media screen and (min-width: 1000px) {
-        grid-template-columns: 20% auto;
+        grid-template-columns: 30% auto;
         grid-template-areas:
             "header header"
             "aside main"
-            // ". main"
             "footer footer";
     }
 }

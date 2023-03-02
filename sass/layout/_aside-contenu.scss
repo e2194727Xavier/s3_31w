@@ -3,7 +3,7 @@
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(246, 226, 245);
+    background-color: rgb(239, 170, 235);
 }
 
 .site__main {
@@ -14,12 +14,14 @@
 
 .site__footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: rgb(216, 122, 247);
 }
 
 .site__aside {
     grid-area: aside;
-    background-color: rgb(212, 237, 242);
+    background-color: rgb(106, 197, 216);
+    color: white;
+    line-height: 1.5em;
 }
 
 // body ou une conteneur global

@@ -80,3 +80,23 @@ function cidweb_modifie_requete_principal($query)
 }
 add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
 //se manifeste juste avant d'exécuter la requête principal
+
+
+/**
+ * Permet de modifier les titre du menu "cours"
+ * @param $title : titre du chois de menu 
+ * @param $item :  le choix global 
+ * @param $args : Object qui représente la stucture du menu 
+ */
+
+
+function perso_menu_item_title($title, $item, $args)
+{
+    // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+    if ($args->menu == 'cours') {
+        // Modifier la longueur du titre en fonction de vos besoins
+        $title = wp_trim_words($title, 3, ' ... ');
+    }
+    return $title;
+}
+add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);

@@ -8,7 +8,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
 }
+
 
 
 .menu-entete-container {
@@ -33,6 +35,7 @@
 
             a {
                 text-decoration: none;
+                text-align: center;
                 color: black;
                 font-size: 20px;
                 padding: 3px 5px;
@@ -47,8 +50,11 @@
         }
     }
 
-    .titre_entete {
-        text-align: center;
-        padding: 10px;
-    }
+
+
+}
+
+.titre_entete h2 {
+    font-size: 40px;
+    color: gray;
 }

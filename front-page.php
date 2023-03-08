@@ -1,6 +1,8 @@
 <?php
 
-/**modele footer.php ?> */ ?>
+/**modele footer.php ?> 
+ * représente le modèle du thème
+ */ ?>
 <?php get_header(); ?>
 
 <main class="site__main">
@@ -11,11 +13,11 @@
         <?php
         if (have_posts()) :
             while (have_posts()) : the_post();
+                $ma__categorie = "notes-wp";
                 if (in_category('galerie')) {
-                    get_template_part("template-parts/categorie", "galerie");
-                } else {
-                    get_template_part("template-parts/categorie", "notes-wp");
-                }
+                    $ma__categorie = "galerie";
+                };
+                get_template_part("template-parts/categorie", $ma__categorie);
             endwhile;
         endif; ?>
     </section>

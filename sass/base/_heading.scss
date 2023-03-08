@@ -32,8 +32,6 @@ h1 {
 
 h2 {
     font-family: sans-serif;
-    /* font-family: "Slackey", cursive;
-    */
 }
 
 h3,
@@ -42,12 +40,16 @@ h5,
 h6 {
     font-family: sans-serif;
     font-weight: bold;
+    line-height: 1.5em;
+}
+
+*+* {
+    margin-bottom: 10px;
 }
 
 p {
     font-family: sans-serif;
     line-height: 1.5em;
-
 }
 
 body {
@@ -60,4 +62,8 @@ body {
 main {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+a {
+    line-height: 1.5em;
 }

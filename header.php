@@ -25,17 +25,4 @@
             <h2><?php bloginfo('description'); ?></h2>
         </section>
     </header>
-    <aside class="site__aside">
-        <h3>Menu secondaire</h3>
-        <?php $category = get_queried_object();
-        if (isset($category)) {
-            $lemenu = $category->slug;
-        } else {
-            $lemenu = "notes-wp";
-        }
-        wp_nav_menu(array(
-            "menu" => $lemenu,
-            "conteneur" => "nav"
-        )); ?>
-
-    </aside>
+    <?php get_template_part("template-parts/aside"); ?>

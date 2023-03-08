@@ -4,7 +4,8 @@
  * template footer.php */ ?>
 
 <footer class="site__footer">
-    <h3>pied de page</h3>
+    <code>pied de page</code>
+
 </footer>
 <?php wp_footer(); ?>
 </body>

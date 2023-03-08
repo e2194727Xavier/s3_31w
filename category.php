@@ -7,7 +7,7 @@ get_header() ?>
 <main class="site__main">
     <section class="blocflex">
         <?php
-        $category = get_queried_object();
+        $category = get_queried_object(); //archive aller chercher category et intorroger linfos
         $args = array(
             'category_name' => $category->slug,
             'orderby' => 'title',
@@ -16,6 +16,7 @@ get_header() ?>
         $query = new WP_Query($args);
         if ($query->have_posts()) :
             while ($query->have_posts()) : $query->the_post(); ?>
+                <!-- gettempletpart simplifie  -->
                 <?php get_template_part("template-parts/categorie", $category->slug); ?>
             <?php endwhile; ?>
         <?php endif;

@@ -1,60 +1,103 @@
-.site__entete {
-    margin-bottom: 20px;
-    padding: 0;
-
-}
+.site__entete {}
 
 .logomenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
 }
 
+.menusearch {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
 
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+    }
+}
+
+#chkBurger {
+    display: none;
+}
+
+.logomenu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menusearch {
+    order: 1;
+}
+
+.menu-container {
+    order: 2;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    z-index: 1000;
+
+    @media screen and (min-width: 500px) {
+        display: none;
+    }
+}
 
 .menu-entete-container {
-
-    // background-color: black;
-    margin-left: auto;
-    padding: 20px;
-    flex: 1;
+    @media screen and (min-width: 500px) {
+        transform: translateX(0);
+    }
 
     .menu {
-        //ul
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        background-color: none;
-        list-style: none;
-        text-transform: uppercase;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 15px;
+
+        @media screen and (max-width: 500px) {
+            gap: 10px;
+        }
+
+        @media screen and (min-width: 500px) {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
         .menu-item {
-            //li
             flex: 1 0 50px;
 
             a {
-                text-decoration: none;
-                text-align: center;
-                color: black;
-                font-size: 20px;
+                white-space: nowrap;
                 padding: 3px 5px;
-            }
+                color: #555;
 
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
 
+                a:hover {
+                    color: var(--hotpink);
+                }
 
-            a:hover {
-                color: hotpink;
-                text-decoration: underline;
+                &:first-child {
+                    @media screen and (max-width: 500px) {
+                        margin-top: 30px;
+                    }
+                }
             }
         }
     }
 
-
-
-}
-
-.titre_entete h2 {
-    font-size: 40px;
-    color: gray;
+    .recherche {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }

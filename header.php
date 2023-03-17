@@ -9,24 +9,32 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site <?= (is_front_page() ? "no-aside" : ""); ?>">
-
+<body class="site <?= (is_front_page() ? "no-aside" : "");  ?> ">
     <header class="site__entete">
         <section class="logomenu">
             <?php the_custom_logo(); ?>
-            <?php wp_nav_menu(array(
-                'menu' => 'entete',
-                'container' => 'nav'
-            )); ?>
-            <?= get_search_form(); ?>
+            <div class="logomenu-container">
+                <div class="menusearch">
+                    <?= get_search_form(); ?>
+                </div>
+                <div class="menu-container">
+                    <label for="chkBurger" class="burger">
+                        <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+                    </label>
+                    <input type="checkbox" id="chkBurger">
+                    <?php wp_nav_menu(array(
+                        'menu' => 'entete',
+                        'container' => 'nav'
+                    )); ?>
+                </div>
+            </div>
         </section>
-        <section class="titre_entete">
-            <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-            <h2><?php bloginfo('description'); ?></h2>
-        </section>
+
+        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h2><?php bloginfo('description'); ?></h2>
     </header>
     <?php
-    if (!is_front_page()) {
-
+    if (is_front_page() == false) {
         get_template_part("template-parts/aside");
-    }; ?>
+    }
+    ?>

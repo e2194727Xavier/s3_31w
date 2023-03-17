@@ -1,22 +1,19 @@
 <?php
 
 /**
- * template footer.php 
+ * Template footer.php
  */
 ?>
-<?php if (has_nav_menu('footer-menu')) { ?>
-    <nav class="footer-menu">
-        <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
-    </nav>
-<?php } ?>
-
-
 <footer class="site__footer">
-    <section class="lien">Lien #1</section>
-    <section class="lien">Lien #2</section>
-    <section class="lien">Lien #3</section>
+    <h3>Pied de page</h3>
+    <ul>
+        <li> <a href="https://github.com/maryline888/s3_31w">GitHub</a>
+        </li>
+        <li> <a href="https://github.com/maryline888/31w_carrousel"></a> Git Caroussel</li>
+        <li> <a href="front-page.php"></a>Accueil</li>
+        <li></li>
+    </ul>
 </footer>
-
 <?php wp_footer(); ?>
 </body>
 

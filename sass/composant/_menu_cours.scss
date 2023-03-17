@@ -1,0 +1,35 @@
+.menu-cours-container {
+    //nav
+
+    .menu {
+        // ul
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        @media screen and (min-width:1000px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            //li du menu
+            list-style-type: none;
+
+            a {
+
+                .cours__sigle {
+                    font-weight: bold;
+                }
+
+                .cours__titre {
+                    display: none;
+
+                    @media screen and (min-width:1000px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

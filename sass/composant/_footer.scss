@@ -1,6 +1,7 @@
 .site__footer {
-    min-width: 100%;
-    background-color: black;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }

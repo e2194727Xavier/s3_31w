@@ -1,7 +1,27 @@
 .site__footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
 
+    ul {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            color: var(--neonPink);
+            font-size: 29px;
+            font-family: monospace;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        a:hover {
+            color: var(--neonGreen);
+        }
+    }
 }

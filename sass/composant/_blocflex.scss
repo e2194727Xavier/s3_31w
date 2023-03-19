@@ -8,58 +8,87 @@
 .blocflex__articles {
     margin: 10px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     flex: 1 0 300px; // grow/shrink/base
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: 1px 5px 10px 0px rgba(255, 16, 240, 0.7);
+
+    h5 a {
+        color: var(--neonGreen);
+        font-family: monospace;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2em;
+        margin-left: 25px;
+
+    }
+
+    h5 a:hover {
+        color: var(--neonPink);
+    }
+
+    h5 p {
+        color: var(--neonOrange);
+        font-family: monospace;
+        text-align: left;
+    }
 
     h3 a {
         text-align: center;
-        color: black;
+        color: var(--neonPink);
         text-decoration: none;
         padding: 10px;
         text-align: center;
+        font-family: monospace;
     }
 
     h3 a:hover {
-        color: var(--orange);
+        color: var(--neonOrange);
+        text-decoration: underline;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+
+    }
+
+    p {
+        text-align: left;
+        align-items: center;
+        font-size: 16px;
+        margin-left: 25px;
+        margin-right: 25px;
+        color: var(--neonOrange);
+    }
+
+    h2 a {
+
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: left;
+        font-family: monospace;
+        color: var(--neonOrange);
+    }
+
+    h2 a:hover {
+        color: var(--hotpink);
         text-decoration: underline;
     }
 
 
+    .blocflex__articles:hover {
+        box-shadow: 4px -5px 29px 27px rgba(255, 255, 51, 0.32);
+    }
 
+    .blocflex__galerie {
+        flex: 1 0 100%;
+    }
 }
-
-h2 {
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-
-}
-
-p {
-    text-align: center;
-    padding: 10px;
-}
-
-h2 a {
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    color: black;
-}
-
-h2 a:hover {
-    color: var(--orange);
-    text-decoration: underline;
-}
-
 
 .blocflex__articles:hover {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 25px, rgba(0, 0, 0, 0.22) 0px 12px 10px;
-}
-
-.blocflex__galerie {
-    flex: 1 0 100%;
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 20px 2px rgba(255, 16, 240, 0.7);
 }

@@ -5,7 +5,7 @@ Mise en page avec display: grid
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: antiquewhite;
+    background-color: var(--noir);
 }
 
 .site__main {
@@ -16,12 +16,19 @@ Mise en page avec display: grid
 
 .site__footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: var(--noir);
 }
 
 .site__aside {
     grid-area: aside;
-    background-color: rgb(47, 148, 210);
+    background-color: var(--noir);
+
+    margin-left: 40px;
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
 }
 
 /* body ou un conteneur globale */
@@ -38,7 +45,7 @@ Mise en page avec display: grid
     row-gap: 50px;
 
     @media screen and (min-width: 1000px) {
-        grid-template-columns: 30% auto;
+        grid-template-columns: 20vw auto;
         grid-template-areas:
             "header header"
             "aside main"
@@ -51,7 +58,7 @@ Mise en page avec display: grid
         "header"
         "main"
         "footer";
-    row-gap: 50px;
+    gap: 0;
 
     @media screen and (min-width: 1000px) {
         grid-template-columns: auto;

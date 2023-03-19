@@ -397,15 +397,24 @@ a {
   text-decoration: none;
 }
 
-.markdown h5 {
+.markdown h1 {
+  font-size: 20px;
+  color: var(--neonGreen);
   font-family: monospace;
-  font-size: 18px;
-  text-transform: uppercase;
+}
+.markdown h2 {
+  color: var(--neonGreen);
+  font-family: monospace;
 }
 .markdown h3 {
   font-family: monospace;
   text-transform: uppercase;
   font-size: 16px;
+}
+.markdown h5 {
+  font-family: monospace;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .markdown li a {
   color: var(--neonPink);
@@ -427,18 +436,10 @@ a {
 .markdown a:hover {
   color: var(--neonOrange);
 }
-.markdown h1 {
-  font-size: 20px;
-  color: var(--neonGreen);
-  font-family: monospace;
-}
-.markdown h2 {
-  color: var(--neonGreen);
-  font-family: monospace;
-}
 .markdown p {
   text-align: left;
-  color: var(--blanc);
+  color: var(--neonOrange);
+  font-size: 1.25em;
   font-family: monospace;
 }
 .markdown strong,
@@ -450,13 +451,15 @@ a {
   font-style: italic;
 }
 .markdown code {
-  font-size: 16px;
-  color: var(--blanc);
-  padding: 20px;
-  border: 1px solid black;
+  font-size: 14px;
+  color: var(--neonGreen);
   font-family: monospace;
 }
-.markdown hr {
+.markdown blockquote p {
+  font-style: italic;
+  color: var(--neonYellow);
+}
+.markdown blockquote p hr {
   color: var(--neonOrange);
 }
 
@@ -741,14 +744,6 @@ a {
   color: var(--neonGreen);
 }
 
-.menu-cours-container {
-  border: 2px solid var(--neonYellow);
-}
-.menu-cours-container .menu {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu {
     flex-direction: column;
@@ -758,21 +753,48 @@ a {
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
 }
+.menu-cours-container .menu .menu-item a {
+  color: var(--neonYellow);
+}
 .menu-cours-container .menu .menu-item a .cours__sigle {
   font-weight: bold;
-}
-.menu-cours-container .menu .menu-item a .cours__titre {
-  display: none;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item a .cours__titre {
     display: block;
   }
 }
+.menu-cours-container .menu .menu-item a:hover {
+  color: var(--neonPink);
+}
 
 .main__recherche article {
   background-color: var(--noir);
   border: 2px solid var(--neonPink);
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-notes-wp-container .menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.menu-notes-wp-container .menu .menu-item {
+  list-style-type: none;
+}
+.menu-notes-wp-container .menu .menu-item a {
+  color: var(--neonYellow);
+}
+.menu-notes-wp-container .menu .menu-item a .cours__sigle {
+  font-weight: bold;
+}
+@media screen and (min-width: 1000px) {
+  .menu-notes-wp-container .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+.menu-notes-wp-container .menu .menu-item a:hover {
+  color: var(--neonPink);
 }
 
 /****************************** COMPOSANT layout*********/

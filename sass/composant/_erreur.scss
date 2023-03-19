@@ -1,7 +1,14 @@
 .erreur {
-    color: red;
     padding: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
+
+    h1 {
+        color: var(--neonPink);
+        font-size: 2.5em;
+        text-transform: uppercase;
+
+
+    }
 }

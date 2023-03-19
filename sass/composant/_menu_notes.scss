@@ -1,6 +1,6 @@
 .menu-notes-wp-container {
 
-
+    //nav
     .menu {
         // ul
         // display: flex;
@@ -19,13 +19,6 @@
             a {
                 color: var(--neonYellow);
 
-
-                .cours__sigle {
-                    font-weight: bold;
-
-                }
-
-
                 .cours__titre {
 
                     @media screen and (min-width:1000px) {
@@ -39,8 +32,4 @@
             }
         }
     }
-
-
-
-
 }

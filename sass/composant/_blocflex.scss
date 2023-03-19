@@ -17,9 +17,14 @@
         font-family: monospace;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 2em;
-        margin-left: 25px;
 
+    }
+
+    h6 {
+        color: var(--neonYellow);
+        font-family: monospace;
+        font-size: 14px;
+        margin-left: 22px;
     }
 
     h5 a:hover {
@@ -73,20 +78,20 @@
         color: var(--neonOrange);
     }
 
-    h2 a:hover {
-        color: var(--hotpink);
-        text-decoration: underline;
-    }
-
-
-    .blocflex__articles:hover {
-        box-shadow: 4px -5px 29px 27px rgba(255, 255, 51, 0.32);
-    }
-
     .blocflex__galerie {
         flex: 1 0 100%;
     }
 }
+
+h2 a:hover {
+    color: var(--hotpink);
+    text-decoration: underline;
+}
+
+
+// .blocflex__articles:hover {
+//     box-shadow: 4px -5px 29px 27px rgba(255, 255, 51, 0.32);
+// }
 
 .blocflex__articles:hover {
     transform: translateY(-5px);

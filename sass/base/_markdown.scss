@@ -26,22 +26,27 @@
 
     }
 
+    ul {
+        color: var(--neonPink);
+        font-family: monospace;
+        font-size: 1.2em;
 
-    li {
-        a {
-            color: var(--neonPink);
-            font-family: monospace;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.55em;
+        li {
+            a {
+                color: var(--neonPink);
+                font-family: monospace;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.55em;
+
+            }
+
+            a:hover {
+                color: var(--neonOrange);
+
+            }
 
         }
-
-        a:hover {
-            color: var(--neonOrange);
-
-        }
-
     }
 
     a {
@@ -57,9 +62,6 @@
         color: var(--neonOrange);
 
     }
-
-
-
 
     p {
         text-align: left;
@@ -93,7 +95,6 @@
 
         hr {
             color: var(--neonOrange);
-            // border-radius: 360px;
         }
     }
 }

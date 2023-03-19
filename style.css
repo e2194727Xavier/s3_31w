@@ -416,14 +416,19 @@ a {
   font-size: 18px;
   text-transform: uppercase;
 }
-.markdown li a {
+.markdown ul {
+  color: var(--neonPink);
+  font-family: monospace;
+  font-size: 1.2em;
+}
+.markdown ul li a {
   color: var(--neonPink);
   font-family: monospace;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.55em;
 }
-.markdown li a:hover {
+.markdown ul li a:hover {
   color: var(--neonOrange);
 }
 .markdown a {
@@ -483,8 +488,12 @@ a {
   font-family: monospace;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2em;
-  margin-left: 25px;
+}
+.blocflex__articles h6 {
+  color: var(--neonYellow);
+  font-family: monospace;
+  font-size: 14px;
+  margin-left: 22px;
 }
 .blocflex__articles h5 a:hover {
   color: var(--neonPink);
@@ -528,15 +537,13 @@ a {
   font-family: monospace;
   color: var(--neonOrange);
 }
-.blocflex__articles h2 a:hover {
-  color: var(--hotpink);
-  text-decoration: underline;
-}
-.blocflex__articles .blocflex__articles:hover {
-  box-shadow: 4px -5px 29px 27px rgba(255, 255, 51, 0.32);
-}
 .blocflex__articles .blocflex__galerie {
   flex: 1 0 100%;
+}
+
+h2 a:hover {
+  color: var(--hotpink);
+  text-decoration: underline;
 }
 
 .blocflex__articles:hover {
@@ -586,10 +593,6 @@ a {
 }
 .site__entete .logomenu .menusearch .recherche .recherche__input::placeholder {
   text-align: left;
-  color: var(--neon);
-}
-.site__entete .logomenu .menusearch .recherche .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   color: var(--neonPink);
 }
 .site__entete .logomenu .menusearch .recherche .recherche_input {
@@ -613,8 +616,10 @@ a {
   display: block;
   position: absolute;
   right: 10px;
+  margin-right: 15px;
+  padding: 10px;
   z-index: 1000;
-  color: var(--neonPink);
+  background-color: var(--neonPink);
 }
 @media screen and (min-width: 500px) {
   .site__entete .logomenu .menu-container .burger {
@@ -650,15 +655,16 @@ a {
   flex: 1 0 50px;
 }
 .site__entete .logomenu .menu-container .menu-entete-container .menu .menu-item a {
-  font-size: 29px;
-  color: var(--neonPink);
-  font-family: monospace;
   padding-left: 2em;
   white-space: nowrap;
+  color: var(--neonPink);
+  font-family: monospace;
+  font-size: 28px;
 }
 @media screen and (max-width: 500px) {
   .site__entete .logomenu .menu-container .menu-entete-container .menu .menu-item a {
-    display: none;
+    font-size: 24px;
+    display: flex;
   }
 }
 @media screen and (max-width: 500px) {
@@ -714,11 +720,15 @@ a {
 }
 
 .erreur {
-  color: red;
   padding: 20px;
   display: flex;
   text-align: center;
   justify-content: center;
+}
+.erreur h1 {
+  color: var(--neonPink);
+  font-size: 2.5em;
+  text-transform: uppercase;
 }
 
 .site__footer ul {
@@ -768,11 +778,6 @@ a {
   color: var(--neonPink);
 }
 
-.main__recherche article {
-  background-color: var(--noir);
-  border: 2px solid var(--neonPink);
-}
-
 @media screen and (min-width: 1000px) {
   .menu-notes-wp-container .menu {
     flex-direction: column;
@@ -785,9 +790,6 @@ a {
 .menu-notes-wp-container .menu .menu-item a {
   color: var(--neonYellow);
 }
-.menu-notes-wp-container .menu .menu-item a .cours__sigle {
-  font-weight: bold;
-}
 @media screen and (min-width: 1000px) {
   .menu-notes-wp-container .menu .menu-item a .cours__titre {
     display: block;
@@ -795,6 +797,11 @@ a {
 }
 .menu-notes-wp-container .menu .menu-item a:hover {
   color: var(--neonPink);
+}
+
+.main__recherche article {
+  background-color: var(--noir);
+  border: 2px solid var(--neonPink);
 }
 
 /****************************** COMPOSANT layout*********/

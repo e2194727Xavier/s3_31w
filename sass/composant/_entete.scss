@@ -124,7 +124,10 @@
                             white-space: nowrap;
                             color: var(--neonPink);
                             font-family: monospace;
+                            padding: 10px;
+                            border-radius: 8px;
                             font-size: 28px;
+                            background-color: var(--noir);
 
                             @media screen and (max-width: 500px) {
 

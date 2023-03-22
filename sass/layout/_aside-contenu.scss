@@ -6,11 +6,14 @@ Mise en page avec display: grid
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: var(--noir);
+    background-color: transparent;
 }
 
 .site__main {
     grid-area: main;
     overflow: hidden;
+    background-color: var(--noir);
+    border-radius: 8px;
     /* Resolves issue with <pre> elements forcing full width. */
 }
 

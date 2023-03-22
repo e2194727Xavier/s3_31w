@@ -659,7 +659,10 @@ h2 a:hover {
   white-space: nowrap;
   color: var(--neonPink);
   font-family: monospace;
+  padding: 10px;
+  border-radius: 8px;
   font-size: 28px;
+  background-color: var(--noir);
 }
 @media screen and (max-width: 500px) {
   .site__entete .logomenu .menu-container .menu-entete-container .menu .menu-item a {
@@ -812,11 +815,14 @@ Mise en page avec display: grid
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: var(--noir);
+  background-color: transparent;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
+  background-color: var(--noir);
+  border-radius: 8px;
   /* Resolves issue with <pre> elements forcing full width. */
 }
 

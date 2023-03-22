@@ -79,15 +79,23 @@ add_theme_support('custom-background');
 
 function perso_menu_item_title($title, $item, $args)
 {
-    // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  
-
+    $sigle = "";
+    // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
     if ($args->menu == 'cours') {
         // Modifier la longueur du titre en fonction de vos besoins
         $sigle = substr($title, 4, 3);
         $title = substr($title, 7);
         $title = "<div class='cours__sigle'>" . $sigle . "</div>" .
             "<p class='cours__titre'>" . wp_trim_words($title, 2, ' ... ') . "</p>";
+    } else if ($args->menu == 'note-wp') {
+        $numeroNote = substr($title, 0, 2);
+        if ($numeroNote[0] == '0') {
+            $numeroNote = substr($numeroNote, 1, 1);
+        }
+        $title = substr($title, 2);
+        $title = "<div class='note_numero'>" . $numeroNote . "</div>" .
+            "<p class='note__titre'>" . wp_trim_words($title, 1, ' ... ') . "</p>";
     }
-    return  $title;
+    return $title;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);

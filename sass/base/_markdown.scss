@@ -69,7 +69,16 @@
         font-size: 1.25em;
         font-family: monospace;
 
+        & ::after {
+            text-align: left;
+            color: var(--neonOrange);
+            font-size: 1.5em;
+            font-family: monospace;
+
+        }
     }
+
+
 
     strong,
     b {

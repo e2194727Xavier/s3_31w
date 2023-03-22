@@ -11,7 +11,7 @@
                 the_title('<h1>', '</h1>');
                 the_content();
                 the_excerpt();
-                the_field('enseignant');
+                the_field('<h2>enseignant</h2>');
             endwhile;
         endif;
         ?>

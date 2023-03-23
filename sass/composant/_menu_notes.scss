@@ -1,27 +1,33 @@
-.menu-notes-wp-container {
-
+.menu-note-wp-container {
     //nav
+
     .menu {
         // ul
-        // display: flex;
-        // flex-direction: row;
-        // gap: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-left: 20px;
 
-        @media screen and (min-width:1000px) {
+        @media screen and (min-width : 1000px) {
             flex-direction: column;
-            flex-wrap: wrap;
         }
 
         .menu-item {
-            //li du menu
+            // li
             list-style-type: none;
 
             a {
-                color: var(--neonYellow);
+                .note__numero {
+                    padding: 3px;
+                    color: var(--neonYellow);
+                }
 
-                .cours__titre {
+                .note__titre {
+                    display: none;
 
-                    @media screen and (min-width:1000px) {
+                    @media screen and (min-width : 1000px) {
                         display: block;
                     }
                 }
@@ -32,4 +38,5 @@
             }
         }
     }
+
 }

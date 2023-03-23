@@ -1,6 +1,12 @@
 <?php
 
-/**modele footer.php ?> */ ?>
+/**modele footer.php ?> */
+
+
+$enseignant = get_field('enseignant')
+
+
+?>
 <?php get_header(); ?>
 <h3>single.php</h3>
 <main class="site__main">
@@ -11,7 +17,9 @@
                 the_title('<h1>', '</h1>');
                 the_content();
                 the_excerpt();
-                the_field('<h2>enseignant</h2>');
+                if ($enseignant) {
+                    echo "<p class='couleur_orange'>" . $enseignant . "<p>";
+                };
             endwhile;
         endif;
         ?>

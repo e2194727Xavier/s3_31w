@@ -6,9 +6,7 @@
  * pour un article de categorie notes-wp
  */
 $titre = get_the_title();
-if (substr($titre, 0, 2) === "00") {
-    $titre = substr($titre, 2);
-} else if (substr($titre, 0, 1) === "0") {
+if (substr($titre, 0, 1) === "0") {
     $titre = substr($titre, 1);
 }
 ?>

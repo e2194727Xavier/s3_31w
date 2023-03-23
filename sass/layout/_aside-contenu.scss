@@ -5,8 +5,9 @@ Mise en page avec display: grid
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: var(--noir);
-    background-color: transparent;
+    // background-color: var(--noir);
+    // background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .site__main {
@@ -30,6 +31,10 @@ Mise en page avec display: grid
     ul {
         padding: 0;
         list-style-type: none;
+    }
+
+    li a {
+        color: var(--neonYellow);
     }
 }
 
@@ -60,7 +65,7 @@ Mise en page avec display: grid
         "header"
         "main"
         "footer";
-    gap: 0;
+    // row-gap: 50px;
 
     @media screen and (min-width: 1000px) {
         grid-template-columns: auto;

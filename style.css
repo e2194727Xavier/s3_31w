@@ -401,6 +401,7 @@ a {
   font-size: 20px;
   color: var(--neonGreen);
   font-family: monospace;
+  text-transform: uppercase;
 }
 .markdown h2 {
   color: var(--neonGreen);
@@ -410,6 +411,7 @@ a {
   font-family: monospace;
   text-transform: uppercase;
   font-size: 16px;
+  color: var(--neonYellow);
 }
 .markdown h5 {
   font-family: monospace;
@@ -420,13 +422,14 @@ a {
   color: var(--neonPink);
   font-family: monospace;
   font-size: 1.2em;
+  list-style: none;
 }
 .markdown ul li a {
   color: var(--neonPink);
   font-family: monospace;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.55em;
+  font-size: 1em;
 }
 .markdown ul li a:hover {
   color: var(--neonOrange);
@@ -482,6 +485,11 @@ a {
   flex-wrap: wrap;
   gap: 10px;
   padding: 2em;
+}
+@media screen and (max-width: 500px) {
+  .blocflex {
+    padding: 1em;
+  }
 }
 
 .blocflex__articles {
@@ -865,7 +873,7 @@ h2 a:hover {
     display: block;
   }
 }
-.menu-note-wp-container .menu .menu-item a:hover {
+.menu-note-wp-container .menu .menu-item li:hover {
   color: var(--neonPink);
 }
 
@@ -889,6 +897,7 @@ Mise en page avec display: grid
   overflow: hidden;
   background-color: var(--noir);
   border-radius: 8px;
+  padding: 20px;
   /* Resolves issue with <pre> elements forcing full width. */
 }
 
@@ -901,6 +910,11 @@ Mise en page avec display: grid
   grid-area: aside;
   background-color: var(--noir);
   margin-left: 40px;
+}
+@media screen and (max-width: 500px) {
+  .site__aside {
+    margin-right: 40px;
+  }
 }
 .site__aside ul {
   padding: 0;
@@ -921,7 +935,7 @@ Mise en page avec display: grid
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 20vw auto;
+    grid-template-columns: 30% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }

@@ -8,7 +8,7 @@ $enseignant = get_field('enseignant')
 
 ?>
 <?php get_header(); ?>
-<h3>single.php</h3>
+
 <main class="site__main">
     <section class="markdown">
         <?php

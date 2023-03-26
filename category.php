@@ -1,10 +1,10 @@
 <?php
 
 /**
-    Modèle category.php permet d'afficher une archive par catégorie d'article
+ *  Modèle category.php permet d'afficher une archive par catégorie d'article
  */
 get_header() ?>
-<main class="site__main markdown">
+<main class="site__main">
     <section class="blocflex">
         <?php
         $category = get_queried_object(); //archive aller chercher category et intorroger linfos

@@ -87,6 +87,12 @@
     .blocflex__galerie {
         flex: 1 0 100%;
     }
+
+    code {
+        font-size: 14px;
+        color: var(--neonGreen);
+        font-family: monospace;
+    }
 }
 
 h2 a:hover {

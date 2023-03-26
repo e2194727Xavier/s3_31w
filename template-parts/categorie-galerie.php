@@ -9,5 +9,6 @@
 ?>
 
 <article class="blocflex__galerie">
+    <code>categorie-galerie.php</code>
     <p><?= the_content(); ?></p>
 </article>

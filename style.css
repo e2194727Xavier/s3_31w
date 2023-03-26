@@ -397,6 +397,12 @@ a {
   text-decoration: none;
 }
 
+code {
+  font-size: 14px;
+  color: var(--neonGreen);
+  font-family: monospace;
+}
+
 .markdown h1 {
   font-size: 20px;
   color: var(--neonGreen);
@@ -559,6 +565,11 @@ a {
 }
 .blocflex__articles .blocflex__galerie {
   flex: 1 0 100%;
+}
+.blocflex__articles code {
+  font-size: 14px;
+  color: var(--neonGreen);
+  font-family: monospace;
 }
 
 h2 a:hover {
@@ -905,6 +916,11 @@ Mise en page avec display: grid
   border-radius: 8px;
   padding: 20px;
   /* Resolves issue with <pre> elements forcing full width. */
+}
+.site__main code {
+  font-size: 14px;
+  color: var(--neonGreen);
+  font-family: monospace;
 }
 
 .site__footer {

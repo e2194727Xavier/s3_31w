@@ -3,7 +3,8 @@
 /**modele footer.php ?> */
 
 
-$enseignant = get_field('enseignant')
+$enseignant = get_field('enseignant');
+$programme = get_field('domaine');
 
 
 ?>
@@ -17,8 +18,9 @@ $enseignant = get_field('enseignant')
                 the_title('<h1>', '</h1>');
                 the_content();
                 the_excerpt();
-                if ($enseignant) {
-                    echo "<p class='couleur_orange'>" . $enseignant . "<p>";
+                if ($enseignant || $programme) {
+                    echo "<p class='neonGreen'>" . $enseignant . "<p>";
+                    echo "<p class='neonGreen'>" . $programme . "<p>";
                 };
             endwhile;
         endif;

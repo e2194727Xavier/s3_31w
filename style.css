@@ -473,6 +473,9 @@ a {
 .markdown blockquote p hr {
   color: var(--neonOrange);
 }
+.markdown .neonGreen {
+  color: var(--neonGreen);
+}
 
 .invisible {
   display: none;
@@ -504,6 +507,7 @@ a {
   font-family: monospace;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.75em;
 }
 .blocflex__articles h6 {
   color: var(--neonYellow);
@@ -818,6 +822,7 @@ h2 a:hover {
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 .menu-notes-wp-container .menu .menu-item a,
 .menu-cours-container .menu .menu-item a {
@@ -860,6 +865,7 @@ h2 a:hover {
 }
 .menu-note-wp-container .menu .menu-item {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 .menu-note-wp-container .menu .menu-item a .note__numero {
   padding: 3px;
@@ -922,6 +928,9 @@ Mise en page avec display: grid
 }
 .site__aside li a {
   color: var(--neonYellow);
+}
+.site__aside li a:hover {
+  color: var(--neonPink);
 }
 
 /* body ou un conteneur globale */

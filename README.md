@@ -1,5 +1,6 @@
 ## Maryline Carrier 
-### Git : https://github.com/maryline888/s3_31w/tree/exer3
+### Git : https://github.com/maryline888/s3_31w.git
+### Git Carrousel : https://github.com/maryline888/31w_carrousel.git
 ### siteground : https://aecweb6.sg-host.com/
 
 # Exercice #3 (5 points)

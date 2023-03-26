@@ -4,7 +4,7 @@
 
 
 $enseignant = get_field('enseignant');
-$programme = get_field('domaine');
+$domaine = get_field('domaine');
 
 
 ?>
@@ -19,7 +19,7 @@ $programme = get_field('domaine');
                 the_excerpt();
                 if ($enseignant || $programme) {
                     echo "<p class='neonGreen'>" . $enseignant . "<p>";
-                    echo "<p class='neonGreen'>" . $programme . "<p>";
+                    echo "<p class='neonGreen'>" . $domaine . "<p>";
                 };
             endwhile;
         endif;

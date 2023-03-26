@@ -22,7 +22,10 @@
                     <label for="chkBurger" class="burger">
                         <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" width="32" height="32">
                     </label>
-                    <input type="checkbox" id="chkBurger">
+                    <label for="chkBurger" class="fermer">
+                        <img src="https://s2.svgbox.net/materialui.svg?ic=close&color=FFFFFF" width="32" height="32">
+                    </label>
+                    <!-- <input type="checkbox" id="chkBurger"> -->
                     <?php wp_nav_menu(array(
                         'menu' => 'entete',
                         'container' => 'nav'

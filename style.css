@@ -634,6 +634,35 @@ h2 a:hover {
     display: none;
   }
 }
+.site__entete .logomenu .menu-container #chkBurger {
+  display: none;
+}
+.site__entete .logomenu .menu-container #chkBurger:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+.site__entete .logomenu .menu-container .burger {
+  display: block;
+}
+@media screen and (min-width: 500px) {
+  .site__entete .logomenu .menu-container .burger {
+    display: none;
+  }
+}
+.site__entete .logomenu .menu-container .fermer {
+  display: none;
+}
+.site__entete .logomenu .menu-container #chkBurger:checked ~ .fermer {
+  display: block;
+}
+.site__entete .logomenu .menu-container #chkBurger:checked ~ .burger {
+  display: none;
+}
+.site__entete .logomenu .menu-container #chkBurger:checked ~ .fermer {
+  display: block;
+}
+.site__entete .logomenu .menu-container #chkBurger:checked ~ .burger:checked + .fermer {
+  display: none;
+}
 @media screen and (min-width: 500px) {
   .site__entete .logomenu .menu-container .menu-entete-container {
     transform: translateX(0);
@@ -765,27 +794,44 @@ h2 a:hover {
   color: var(--neonGreen);
 }
 
+.menu-notes-wp-container .menu,
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
+  .menu-notes-wp-container .menu,
   .menu-cours-container .menu {
     flex-direction: column;
   }
 }
+.menu-notes-wp-container .menu .menu-item,
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
   margin-left: 20px;
 }
+.menu-notes-wp-container .menu .menu-item a,
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  align-items: center;
+}
+.menu-notes-wp-container .menu .menu-item a .cours__sigle,
 .menu-cours-container .menu .menu-item a .cours__sigle {
   padding: 3px;
 }
+@media screen and (min-width) {
+  .menu-notes-wp-container .menu .menu-item a .cours__sigle,
+  .menu-cours-container .menu .menu-item a .cours__sigle {
+    padding: 1px;
+  }
+}
+.menu-notes-wp-container .menu .menu-item a .cours__titre,
 .menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
+  .menu-notes-wp-container .menu .menu-item a .cours__titre,
   .menu-cours-container .menu .menu-item a .cours__titre {
     display: block;
   }

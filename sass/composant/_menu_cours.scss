@@ -1,3 +1,4 @@
+.menu-notes-wp-container,
 .menu-cours-container {
     //nav
 
@@ -17,8 +18,16 @@
             margin-left: 20px;
 
             a {
+                display: flex;
+                align-items: center;
+
                 .cours__sigle {
                     padding: 3px;
+
+                    @media screen and (min-width) {
+                        padding: 1px;
+
+                    }
                 }
 
                 .cours__titre {

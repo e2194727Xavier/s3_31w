@@ -93,6 +93,44 @@
                 }
             }
 
+            #chkBurger {
+                display: none;
+            }
+
+            #chkBurger:checked~.menu-entete-container {
+                transform: translateX(0);
+            }
+
+            .burger {
+                display: block;
+
+                @media screen and (min-width: 500px) {
+                    display: none;
+                }
+            }
+
+
+            .fermer {
+                display: none;
+            }
+
+            #chkBurger:checked~.fermer {
+                display: block;
+            }
+
+            #chkBurger:checked~.burger {
+                display: none;
+            }
+
+            #chkBurger:checked~.fermer {
+                display: block;
+
+            }
+
+            #chkBurger:checked~.burger:checked+.fermer {
+                display: none;
+            }
+
             .menu-entete-container {
                 @media screen and (min-width: 500px) {
                     transform: translateX(0);

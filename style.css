@@ -817,6 +817,27 @@ h2 a:hover {
   color: var(--neonGreen);
 }
 
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__widget {
+  display: flex;
+  flex-direction: row;
+}
+.footer__widget div {
+  flex: 1 0 33%;
+}
+
+.footer__lien {
+  display: flex;
+  flex-direction: row;
+}
+.footer__lien div {
+  flex: 1 0 33%;
+}
+
 .menu-notes-wp-container .menu,
 .menu-cours-container .menu {
   display: flex;
@@ -915,6 +936,7 @@ Mise en page avec display: grid
   background-color: var(--noir);
   border-radius: 8px;
   padding: 20px;
+  color: var(--neonPink);
   /* Resolves issue with <pre> elements forcing full width. */
 }
 .site__main code {

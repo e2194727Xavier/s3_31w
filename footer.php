@@ -5,15 +5,21 @@
  */
 ?>
 <footer class="site__footer">
-    <?php wp_nav_menu(array(
-        'menu' => 'footer-menu',
-        'container' => 'nav'
-    )); ?>
-    <!-- <ul>
-        <li> <a href="https://github.com/maryline888/s3_31w">GitHub</a> </li>
-        <li> <a href="https://github.com/maryline888/31w_carrousel">Git Caroussel</a></li>
-        <li> <a href="front-page.php">Accueil</a></li>
-    </ul> -->
+    <section class="footer__widget">
+        <div><?php dynamic_sidebar('pied-page-1'); ?></div>
+        <div><?php dynamic_sidebar('pied-page-2'); ?></div>
+        <div><?php dynamic_sidebar('pied-page-3'); ?></div>
+    </section>
+    <section class="footer__lien">
+        <div><?php wp_nav_menu(array(
+                    'menu' => 'lien-externe-1',
+                    'container' => 'nav',
+                    'container_class' => 'footer__lien__nav'
+                )); ?></div>
+        <div><?php ?></div>
+        <div><?php ?></div>
+    </section>
+
 </footer>
 <?php wp_footer(); ?>
 </body>

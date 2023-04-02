@@ -1,5 +1,16 @@
 .viewport {
-    min-height: 100vh; //bcp trop haut
+    min-height: 40vh; //bcp trop haut
 
     padding: 0 3rem;
+
+    h4 {
+        font-size: 1.85em;
+        color: var(--neonGreen);
+        font-weight: 500;
+    }
+
+    a {
+        font-size: 1.5em;
+        color: var(--neonYellow);
+    }
 }

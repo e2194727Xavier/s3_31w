@@ -62,7 +62,6 @@ add_theme_support(
 );
 
 add_theme_support('title-tag');
-
 add_theme_support(
     'custom-logo',
     array(
@@ -74,7 +73,8 @@ add_theme_support(
 //param $defaults est optionel
 add_theme_support('custom-background');
 
-add_theme_support('custom-background');
+add_theme_support('post-thumbnails');
+
 function perso_menu_item_title($title, $item, $args)
 {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  
@@ -100,12 +100,6 @@ function perso_menu_item_title($title, $item, $args)
     return  $title;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
-
-add_theme_support('post-thumbnails');
-
-
-
-
 
 ///////////////////////////////// Enregistrement d'un sidebar
 // Enregistrer le sidebar

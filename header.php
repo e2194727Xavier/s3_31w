@@ -16,6 +16,8 @@
             <?php the_custom_logo(); ?>
             <div class="logomenu-container">
                 <div class="menusearch">
+                    <input type="checkbox" id="chkBurger">
+
                     <?= get_search_form(); ?>
                 </div>
                 <div class="menu-container">
@@ -40,8 +42,6 @@
             $classe = "invisible";
         }
         ?>
-        <h1 class="site__titre <?= $classe ?> "><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-        <h2 class="site__soustitre <?= $classe ?>"><?php bloginfo('description'); ?></h2>
     </header>
     <?php
     if (is_front_page() == false) {

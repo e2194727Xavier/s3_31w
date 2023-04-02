@@ -961,8 +961,17 @@ h2 a:hover {
 }
 
 .viewport {
-  min-height: 100vh;
+  min-height: 40vh;
   padding: 0 3rem;
+}
+.viewport h4 {
+  font-size: 1.85em;
+  color: var(--neonGreen);
+  font-weight: 500;
+}
+.viewport a {
+  font-size: 1.5em;
+  color: var(--neonYellow);
 }
 
 /****************************** COMPOSANT layout*********/

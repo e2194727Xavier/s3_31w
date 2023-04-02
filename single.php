@@ -9,8 +9,10 @@
             while (have_posts()) : the_post();
                 if (in_category('cours')) {
                     get_template_part('template-parts/single', 'cours');
-                } else (in_category('note-wp')); {
+                } elseif (in_category('note-wp')) {
                     get_template_part('template-parts/single', 'note');
+                } else {
+                    get_template_part('template-parts/single', 'erreur');
                 }
             endwhile;
         endif;

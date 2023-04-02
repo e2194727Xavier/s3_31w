@@ -12,12 +12,13 @@
     </section>
     <section class="footer__lien">
         <div><?php wp_nav_menu(array(
-                    "menu" => "menu-footer",
-                    'container' => 'nav',
-                    // 'container_class' => 'footer__lien__nav'
+                    "menu" => "footer-menu",
+                    "container" => "nav",
                 )); ?></div>
-        <div><?php ?></div>
-        <div><?php ?></div>
+        <div class="footer__infoPerso">
+            <?php the_custom_logo(); ?>
+            <p>Copyright MC ~ 2023 ~ Cours WordPress collège Maisonneuve avec Eddy Martin</p>
+        </div>
     </section>
 
 </footer>

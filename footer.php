@@ -12,9 +12,9 @@
     </section>
     <section class="footer__lien">
         <div><?php wp_nav_menu(array(
-                    'menu' => 'lien-externe-1',
+                    "menu" => "menu-footer",
                     'container' => 'nav',
-                    'container_class' => 'footer__lien__nav'
+                    // 'container_class' => 'footer__lien__nav'
                 )); ?></div>
         <div><?php ?></div>
         <div><?php ?></div>

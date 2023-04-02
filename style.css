@@ -797,12 +797,8 @@ h2 a:hover {
 .site__footer ul {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
   gap: 30px;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
 }
 .site__footer ul a {
   color: var(--neonPink);
@@ -813,29 +809,37 @@ h2 a:hover {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+@media screen and (min-width: 500px) {
+  .site__footer ul a {
+    font-size: 18px;
+  }
+}
 .site__footer ul a:hover {
   color: var(--neonGreen);
 }
-
-.site__footer {
+.site__footer .site__footer {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
-
-.footer__widget {
+.site__footer .footer__widget {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.site__footer .footer__widget div {
+  flex: 1 0 33%;
+}
+.site__footer .footer__lien {
   display: flex;
   flex-direction: row;
 }
-.footer__widget div {
-  flex: 1 0 33%;
-}
-
-.footer__lien {
-  display: flex;
-  flex-direction: row;
-}
-.footer__lien div {
-  flex: 1 0 33%;
+@media screen and (min-width: 500px) {
+  .site__footer .footer__lien {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .menu-notes-wp-container .menu,
@@ -918,6 +922,27 @@ h2 a:hover {
 .main__recherche article {
   background-color: var(--noir);
   border: 2px solid var(--neonPink);
+}
+
+.meu__bloc .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.meu__bloc .menu .menu-item {
+  border: 1px white solid;
+  flex: 1 0 33%;
+}
+.meu__bloc .menu .menu-item a {
+  color: var(--neonYellow);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.viewport {
+  min-height: 100vh;
+  padding: 0 3rem;
 }
 
 /****************************** COMPOSANT layout*********/

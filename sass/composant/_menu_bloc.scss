@@ -1,0 +1,31 @@
+.meu__bloc {
+    //conteneur principal nav 
+
+    .menu {
+        //ul
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style-type: none;
+
+
+        .menu-item {
+            //li
+            border: 1px white solid;
+            flex: 1 0 33%;
+            // height: ;
+
+            a {
+                color: var(--neonYellow);
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
+
+            //risque detre plus complexe... description ...
+        }
+    }
+
+
+
+
+}
